@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'NetworkLibrary'
-s.version          = '0.1.1'
+s.version          = '0.1.2'
 s.summary          = '网络框架'
 
 s.description      = '网络框架'
@@ -14,7 +14,7 @@ s.source           = { :git => 'https://github.com/LiBiYong/NetworkLibrary.git',
 
 s.ios.deployment_target = '8.0'
 
-#s.source_files = 'NetworkLibrary/**/*'
+s.source_files = 'NetworkLibrary/**/*'
 
 #  s.resource_bundle= {
 #     'AsstesImageBundle' => ['NetworkLibrary/*.png']
