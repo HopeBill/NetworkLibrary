@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'NetworkLibrary'
-s.version          = '0.2.0'
+s.version          = '0.1.1'
 s.summary          = '网络框架'
 
 s.description      = '网络框架'
