@@ -60,12 +60,11 @@
 		A90E562322CCA3740026CC05 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90E562722CCA3740026CC05 /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		A90E562922CCA3740026CC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A90E563522CCA42E0026CC05 /* NetworkLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NetworkLibrary.podspec; sourceTree = SOURCE_ROOT; };
+		A90E563522CCA42E0026CC05 /* NetworkLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NetworkLibrary.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A90E563822CCA4E50026CC05 /* NSErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSErrorHelper.h; sourceTree = "<group>"; };
 		A90E563922CCA4E50026CC05 /* NSArray+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Request.h"; sourceTree = "<group>"; };
 		A90E563A22CCA4E50026CC05 /* NSArray+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Request.m"; sourceTree = "<group>"; };
 		A90E563B22CCA4E50026CC05 /* RequestBaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBaseAPI.m; sourceTree = "<group>"; };
-		A90E563C22CCA4E50026CC05 /* LibraryClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryClass.h; sourceTree = "<group>"; };
 		A90E563D22CCA4E50026CC05 /* RequestAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPIManager.h; sourceTree = "<group>"; };
 		A90E563E22CCA4E50026CC05 /* NSDictionary+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Request.m"; sourceTree = "<group>"; };
 		A90E563F22CCA4E50026CC05 /* RequestAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPIManager.m; sourceTree = "<group>"; };
@@ -170,7 +169,6 @@
 		A90E563722CCA4340026CC05 /* NetworkLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A90E563C22CCA4E50026CC05 /* LibraryClass.h */,
 				A90E563922CCA4E50026CC05 /* NSArray+Request.h */,
 				A90E563A22CCA4E50026CC05 /* NSArray+Request.m */,
 				A90E564222CCA4E50026CC05 /* NSDictionary+Request.h */,
@@ -205,6 +203,7 @@
 				A90E55FC22CCA3730026CC05 /* Sources */,
 				A90E55FD22CCA3730026CC05 /* Frameworks */,
 				A90E55FE22CCA3730026CC05 /* Resources */,
+				15DBC9C2E0B6992CF24B9115 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,6 +321,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15DBC9C2E0B6992CF24B9115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ResourceUtilityClass/ResourceUtilityClass.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResourceUtilityClass.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		62EDF680F1780DCE603404DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

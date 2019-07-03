@@ -84,7 +84,6 @@
         case AFNetworkReachabilityStatusNotReachable:
             weakSelf.netType = NONet;
             weakSelf.netTypeString = @"网络已断开";
-            [[SDWebImageManager sharedManager] cancelAll];
             break;
 
         case AFNetworkReachabilityStatusUnknown:

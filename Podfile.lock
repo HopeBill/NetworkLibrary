@@ -1,3 +1,44 @@
-PODFILE CHECKSUM: 3aa337f80db310c57a6fd4be5bb393d9386089d0
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - NetworkLibrary (0.1.0):
+    - AFNetworking (~> 3.1.0)
+    - ResourceUtilityClass
+  - ResourceUtilityClass (0.1.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - NetworkLibrary (from `../Example`)
+  - ResourceUtilityClass (~> 0.1.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+  https://github.com/LiBiYong/SpecsLibrary.git:
+    - ResourceUtilityClass
+
+EXTERNAL SOURCES:
+  NetworkLibrary:
+    :path: "../Example"
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  NetworkLibrary: 1a3891896cdbaae99750569e58dba9c391cf56f7
+  ResourceUtilityClass: 11b654231a495e262b1037b93dde4a73a089588a
+
+PODFILE CHECKSUM: 0918514f84ed2549d156754cdbefb8151496fbe7
 
 COCOAPODS: 1.5.3

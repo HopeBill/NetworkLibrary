@@ -1,0 +1,29 @@
+{
+  "name": "NetworkLibrary",
+  "version": "0.1.0",
+  "summary": "网络框架",
+  "description": "网络框架",
+  "homepage": "https://github.com/LiBiYong/NetworkLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1255418023@qq.com": "1255418023@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/LiBiYong/NetworkLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~>3.1.0"
+    ],
+    "ResourceUtilityClass": [
+
+    ]
+  }
+}

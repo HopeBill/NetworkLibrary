@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'NetworkLibrary'
-s.version          = '0.1.0'
+s.version          = '0.2.0'
 s.summary          = '网络框架'
 
 s.description      = '网络框架'
@@ -23,5 +23,6 @@ s.ios.deployment_target = '8.0'
 # s.public_header_files = 'Pod/Classes/**/*.h'
 # s.frameworks = 'UIKit'
 s.dependency 'AFNetworking',         '~>3.1.0'
+s.dependency 'ResourceUtilityClass'
 end
 

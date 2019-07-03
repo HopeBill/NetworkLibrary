@@ -1,0 +1,6 @@
+framework module ResourceUtilityClass {
+  umbrella header "ResourceUtilityClass-umbrella.h"
+
+  export *
+  module * { export * }
+}
